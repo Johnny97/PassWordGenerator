@@ -1,0 +1,11 @@
+#Random password generator
+
+import random
+
+s = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+
+length = int(raw_input("How long is the password required to be?"))
+
+p = "".join(random.sample(s,length))
+
+print p
